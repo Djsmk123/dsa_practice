@@ -41,5 +41,5 @@ class infinite_sorted_array
 int main(){
     infinite_sorted_array obj;
     vector<int> arr={2,3,5,7,9,10,23,24,28};
-    cout<<obj.inifite_search(arr,5);
+    obj.inifite_search(arr,8);
 }
