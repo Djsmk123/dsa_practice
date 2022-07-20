@@ -2,46 +2,20 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-class Solution{
-    public:
-    bool search(vector<int> &nums,int target)
-    {
-        int pivot = findPivot(nums);
-
-      
-        if (pivot == -1) {
-          
-            return binarySearch(nums, target, 0 , nums.size() - 1);
-        }
-
-       
-        if (nums[pivot] == target) {
-            return true;
-        }
-
-        if (target >= nums[0]) {
-            return binarySearch(nums, target, 0, pivot - 1);
-        }
-
-        return binarySearch(nums, target, pivot + 1, nums.size() - 1);
-
-       
-    }
-    int binarySearch(vector<int> & nums,int t,int s,int e)
-    {
-        
-        while(s<=e)
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+       int pivot=findPivot(nums);
+        if(pivot==-1)
         {
-            int mid=s+(e-s)/2;
-            cout<<mid<<endl;
-            if(nums[mid]==t)
-            return true;
-            if(t>nums[mid])
-            s=mid+1;
-            else
-            e=mid-1;
+            return nums[0];
         }
-        return false;
+        cout<<pivot;
+        if(nums[pivot+1]>nums[0])
+            return nums[0];
+        else
+            return nums[pivot+1];
+            
     }
     int findPivot(vector<int>& arr)
     {
@@ -82,5 +56,5 @@ class Solution{
         }
         return -1;
     }
-
+   
 };
