@@ -1,3 +1,8 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<math.h>
+using namespace std;
 class Solution {
 public:
      #define ll long long
