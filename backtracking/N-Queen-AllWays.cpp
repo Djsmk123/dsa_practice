@@ -70,7 +70,6 @@ int solveNQueen(int n, int board[][20],int i)
         {
             board[i][j]=1;
             ways+=solveNQueen(n,board,i+1);
-        
             //backtrack
             board[i][j]=0;
         }
