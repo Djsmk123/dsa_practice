@@ -15,7 +15,7 @@ using namespace std;
 
 vector<vector<int>> makeZeroes(vector<vector<int>> arr){
     // your code goes here
- int n = arr.size();
+    int n = arr.size();
 	vector<pair<int,int>> zeroIndex ;
  
 	for(int i = 0 ; i < n ; i++){

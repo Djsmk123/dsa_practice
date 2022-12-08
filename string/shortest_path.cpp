@@ -42,11 +42,11 @@ int main(){
     }
     else if(x<=0 && y<=0)
     {
-         while(y--)
+         while(y++)
         {
             cout<<"S";
         }
-        while(x--)
+        while(x++)
         {
             cout<<"W";
         }

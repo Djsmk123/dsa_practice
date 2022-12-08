@@ -93,3 +93,19 @@ vector<vector<int>> ratAndMice(vector<string> arr) {
 
     
 }
+/*
+ 0 x    1 0     
+ 0 0    1 1
+
+ path   ans        m=2 ,n =2   
+ 
+1 0    1 0
+1 1    1 1
+
+1 0    
+1 0
+
+1 0
+0 0
+
+*/
